@@ -1,0 +1,100 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+	"name": "Node.js",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"installGradle": true,
+			"installMaven": true,
+			"installAnt": true,
+			"installGroovy": true,
+			"version": "latest",
+			"jdkDistro": "ms",
+			"gradleVersion": "latest",
+			"mavenVersion": "latest",
+			"antVersion": "latest",
+			"groovyVersion": "latest"
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"nodeGypDependencies": true,
+			"installYarnUsingApt": true,
+			"version": "latest",
+			"pnpmVersion": "latest",
+			"nvmVersion": "latest"
+		},
+		"ghcr.io/rio/features/k3d:1": {},
+		"ghcr.io/ebaskoro/devcontainer-features/scala:1": {
+			"installSbt": true,
+			"version": "latest",
+			"sbtVersion": "latest"
+		},
+		"ghcr.io/r3dpoint/devcontainer-features/tailwindcss-standalone-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/schlich/devcontainer-features/node-exporter:1": {},
+		"ghcr.io/cirolosapio/devcontainers-features/alpine-node:0": {
+			"corepack": true,
+			"pnpmVersion": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/corepack:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/kind:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/lighthouse-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/linode-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/lite-server:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/mocha:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/nestjs-cli:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/node-asdf:0": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/node-exporter:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/prisma:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/ts-node:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/tsx:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/vercel-ncc:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/vercel-pkg:1": {
+			"version": "latest"
+		},
+		"ghcr.io/roul/devcontainer-features/mise-node:1": {}
+	}
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "yarn install",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
